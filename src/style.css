@@ -2,6 +2,12 @@
 https://tailwindcss.com/docs/installation
 */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 /* Animating the scrowl down icon */
 .scroll {
   width: 60px;
