@@ -1,5 +1,29 @@
 {
+  "name": "portfolio-dec-2024",
+  "version": "1.0.0",
+  "description": "mc-portfolio-dec-2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarineCrou/portfolio-dec-2024.git"
+  },
+  "keywords": [
+    "portfolio",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Marine Crouzet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarineCrou/portfolio-dec-2024/issues"
+  },
+  "homepage": "https://github.com/MarineCrou/portfolio-dec-2024#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   }
 }
