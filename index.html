@@ -20,7 +20,7 @@
 
   <body>
     <!-- * Hero Section  -->
-    <div class="bg-white">
+    <div class="bg-white" id="home">
       <header class="absolute inset-x-0 top-0 z-50">
         <nav
           class="flex items-center justify-between p-6 lg:px-8"
@@ -63,8 +63,10 @@
             <a href="#projects" class="text-sm/6 font-semibold text-gray-900"
               >Projects</a
             >
-            <a href="#" class="text-sm/6 font-semibold text-gray-900"
-              >Favourite Stacks</a
+            <a
+              href="#favorite-stack"
+              class="text-sm/6 font-semibold text-gray-900"
+              >Favorite Stacks</a
             >
             <a
               href="#testimonials"
@@ -242,40 +244,232 @@
             <div class="scroll"></div>
           </div>
         </div>
-      </div>
-
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true"
-      >
         <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "
-        ></div>
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
       </div>
     </div>
 
-    <!-- ! Project section -->
+    <!-- * Favorite stack Section -->
+    <section id="favorite-stack" class="bg-gray-50 py-16">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <!-- Left Section: Favorite Stack -->
+          <div>
+            <h2 class="text-center text-base/7 font-semibold text-indigo-600">
+              Stack
+            </h2>
+            <p
+              class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl"
+            >
+              Favorite Stack
+            </p>
 
+            <p class="mt-4 text-gray-600 text-lg">
+              These are the tools and technologies I love working with the most.
+              They allow me to build scalable, dynamic, and visually stunning
+              web applications.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                JavaScript
+              </button>
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                TailwindCSS
+              </button>
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                React
+              </button>
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                Python
+              </button>
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                Next.js
+              </button>
+              <button
+                class="px-4 py-2 rounded-md border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-50"
+              >
+                Strapi (Headless CMS)
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Section: Full Stack -->
+          <div>
+            <h3
+              class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl"
+            >
+              Full Stack
+            </h3>
+            <div class="mt-8 space-y-8">
+              <div class="mt-4 flex flex-wrap gap-4 justify-center">
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  JavaScript
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Python
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  TypeScript
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Flask
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Next.js
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  TailwindCSS
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  React
+                </button>
+
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  PostgreSQL
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  MongoDB
+                </button>
+
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Node.js
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Vite
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  OpenAI
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  REST APIs
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Insomnia
+                </button>
+
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Git
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Figma
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Prettier
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Visual Studio Code
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Slack
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Trello
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Notion
+                </button>
+
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Netlify
+                </button>
+                <button
+                  class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 bg-white shadow-sm hover:bg-indigo-50"
+                >
+                  Heroku
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- * Projects section -->
     <section id="projects">
       <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -486,11 +680,11 @@
       <h2 class="text-center text-base/7 font-semibold text-indigo-600">
         Testimonials
       </h2>
-      <p
+      <!-- <p
         class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl"
       >
         What They Think ☀️
-      </p>
+      </p> -->
       <div
         class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -566,87 +760,44 @@
       </div>
     </section>
 
-    <!-- ! HTML STRUCTURE FOR MY WEBSITE -->
-    <header>
-      <div class="hero-container">
-        <div class="scroll"></div>
-        <!-- About Me -->
-        <h1>Fullstack Software Developer, ex-Founder & Freelancer</h1>
-        <p>About Me : 5 lines max</p>
-        <button class="hire-me-btn">Copy Email</button>
-        <button class="hire-me-btn"><a href="#">Schedule a call</a></button
-        ><button class="hire-me-btn">Github</button>
-        <p>available for new remote opportunities</p>
-        <!--    available for new remote opportunities - with a dot that is green when available or red when not ! -->
-      </div>
-    </header>
-
-    <main>
-      <!-- ! Have the texte deroulant like here "FEATURED WORK" : https://www.figma.com/proto/MLtAI2snthiqeo350Ew2TZ/portfolioDesign001-(Community)?node-id=1-2&node-type=canvas&t=Evsj3loEEbFzcrSq-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1 -->
-      <div class="projects">
-        <!-- Projects -->
-        <div class="single-project-container">
-          <!-- loop through it?  -->
+    <!-- Footer -->
+    <footer>
+      <hr class="container my-14 border-grey-200 items-center" />
+      <div class="container px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
+        <div class="relative">
+          <div
+            class="flex flex-col items-center justify-between gap-6 sm:flex-row"
+          >
+            <div
+              class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-grey-800"
+            >
+              <a
+                class="transition hover:text-gray-600 text-indigo-600"
+                href="#home"
+                >Home</a
+              ><a
+                class="transition hover:text-gray-600 text-indigo-600"
+                href="#projects"
+                >Projects</a
+              ><a
+                class="transition hover:text-gray-600 text-indigo-600"
+                href="#testimonials"
+                >Testimonial</a
+              ><a
+                class="transition hover:text-gray-600 text-indigo-600"
+                href="#home"
+                >About</a
+              >
+            </div>
+            <p class="text-sm text-zinc-400 dark:text-zinc-500">
+              Marine Crouzet 2024
+            </p>
+          </div>
         </div>
       </div>
-      <div class="stack">
-        <h2>Favorite stack</h2>
-        <!-- Favorite Stack -->
-        <!-- list of stack ? -->
-        <!--  -->
-        <button>all</button>
-        <h3>Languages</h3>
-        <button>HTML</button>
-        <button>css</button>
-        <button>JavaScript</button>
-        <button>Python</button>
-        <button>Typescript</button>
-
-        <h3>Frameworks</h3>
-        <button>Strapi (headless CMS)</button>
-
-        <h3>Libraries</h3>
-        <button>Tailwind</button>
-        <button>Bootstrap</button>
-        <button>React</button>
-        <button>Next.js</button>
-
-        <button>APis</button>
-        <button>SQL</button>
-        <button>Database (mongoDB & PostgreSQL)</button>
-
-        <h3>Tools</h3>
-        <button>Figma</button>
-        <button>Git</button>
-        <button>Github</button>
-        <button>Visual Studio Code</button>
-        <button>Prettier</button>
-        <button>Vite</button>
-        <button>Firefox Developper Edition</button>
-        <button>Insomnia</button>
-      </div>
-
-      <div class="testimonial-container">
-        <!-- testimonials -->
-        <h2>Testimonials</h2>
-        <!-- carrousel ? -->
-      </div>
-    </main>
-
-    <footer class="contact-me">
-      <!-- footer -->
-      <!-- contact : Get in touch! (calendly, email)-->
-      <h3>Have any questions?</h3>
-      <div>
-        <ul>
-          <li><a href="#">github</a></li>
-          <li><a href="#">linkedin</a></li>
-          <li><a href="#">Copy Email </a></li>
-          <li><a href="#">Calendly</a></li>
-        </ul>
-      </div>
-      <button class="hire-me-btn">hire me</button>
     </footer>
+
+    <!--  -->
 
     <script src="./src/index.js"></script>
   </body>
