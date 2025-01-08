@@ -19,24 +19,527 @@
   </head>
 
   <body>
-    <div class="bg-blue-500 text-white p-4 rounded">Hello, Tailwind CSS!</div>
-    <header class="bg-midnight text-tahiti">
-      <div class="logo-container">
-        <img src="https://i.ibb.co/vw2GQ83/Marine.png" alt="Marine" />
+    <!-- * Hero Section  -->
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav
+          class="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Marine Crouzet</span>
+              <img
+                class="h-20 w-auto"
+                src="https://i.ibb.co/vw2GQ83/Marine.png"
+                alt="Marine"
+              />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm/6 font-semibold text-gray-900"
+              >Projects</a
+            >
+            <a href="#" class="text-sm/6 font-semibold text-gray-900"
+              >Favourite Stacks</a
+            >
+            <a href="#" class="text-sm/6 font-semibold text-gray-900"
+              >Testimonials</a
+            >
+            <a href="#" class="text-sm/6 font-semibold text-gray-900"
+              >Contact</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <button
+              class="text-sm/6 font-semibold rounded-md bg-indigo-600 px-3.5 py-2.5 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Hire Me
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Marine Crouzet</span>
+                <img
+                  class="h-8 w-auto"
+                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                  alt=""
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Product</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Features</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Marketplace</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Company</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Log in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div
+              class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            >
+              Quick peek at some of the projects I've done :
+              <a href="#" class="font-semibold text-indigo-600"
+                ><span class="absolute inset-0" aria-hidden="true"></span
+                >Projects <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
+          </div>
+          <div class="text-center">
+            <h1
+              class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+            >
+              Hi, I'm Marine, <br />
+              a startup founder turned software developer.
+            </h1>
+            <p
+              class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
+            >
+              I'm a
+              <span class="text-indigo-600 bold">
+                fullstack Software Developer</span
+              >
+              with 10+ years of business experience. Now a freelance web
+              developer, I specialize in React, Next.js, Headless CMS, and
+              Python, working fully remotely.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Hire Me</a
+              >
+              <a href="#" class="text-sm/6 font-semibold text-gray-900"
+                >Contact Me <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="flex items-center justify-center pt-7">
+              <div class="scroll"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
       </div>
-      <nav>
-        <!-- logo to the left -->
-        <!-- Nav to the right  -->
-        <ul>
-          <li><p>Home</p></li>
-          <li><p>About Me</p></li>
-          <li><p>Projects</p></li>
-          <li><p>Favourite Stacks</p></li>
-          <li><p>testimonials</p></li>
-          <li><p>contact</p></li>
-          <li><button class="hire-me-btn">Hire Me</button></li>
-        </ul>
-      </nav>
+    </div>
+
+    <!-- ! Project section -->
+
+    <section>
+      <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <h2 class="text-center text-base/7 font-semibold text-indigo-600">
+            Projects
+          </h2>
+          <p
+            class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl"
+          >
+            Things I’ve made and contributed to 💻
+          </p>
+          <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            <div class="relative lg:row-span-2">
+              <div
+                class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"
+              ></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]"
+              >
+                <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <a
+                    href="https://main--influential-women.netlify.app/"
+                    alt="unsung women"
+                    target="_blank"
+                  >
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-indigo-600 underline max-lg:text-center"
+                    >
+                      Unsung Women
+                    </p>
+                  </a>
+                  <p
+                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                  >
+                    A fullstack project, using React and Python, celebrating the
+                    Unsung Heroines of History. <br />
+                    "Unsung Women" is not just a repository of history — it is a
+                    living, breathing community driven by participation and
+                    contribution from people wishing to shine a light on
+                    remarkable women throughout history whose contributions have
+                    often been overlooked or forgotten.
+                    <br />
+                    <span class="italic text-indigo-400"> In progress</span>
+                  </p>
+                </div>
+                <div>
+                  <button></button>
+                  <button></button><button></button><button></button
+                  ><button></button><button></button><button></button
+                  ><button></button>
+                </div>
+                <div
+                  class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm"
+                >
+                  <div
+                    class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl"
+                  >
+                    <img
+                      class="size-full object-cover object-top"
+                      src="./media/Unsung-Women.png"
+                      alt="unsung women project"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"
+              ></div>
+            </div>
+            <div class="relative max-lg:row-start-1">
+              <div
+                class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"
+              ></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]"
+              >
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <a
+                    href="https://peachyness.com"
+                    alt="peachyness website"
+                    target="_blank"
+                    ><p
+                      class="mt-2 text-lg font-medium tracking-tight text-indigo-600 underline max-lg:text-center"
+                    >
+                      Peachyness
+                    </p></a
+                  >
+                  <p
+                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                  >
+                    The website I built, using a CMS (Shopify) and customized
+                    using css. As a bootstrapped company founder, Peachyness is
+                    the project I fell in love with coding and web design and
+                    understanding the importance of high-quality websites to
+                    promote one's business. It's the project that led me to make
+                    a change
+                  </p>
+                </div>
+                <div
+                  class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2"
+                >
+                  <img
+                    class="w-full max-lg:max-w-xs pt-6 pb-2"
+                    src="./media/Peachyness-Website.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"
+              ></div>
+            </div>
+            <div
+              class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+            >
+              <div class="absolute inset-px rounded-lg bg-white"></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]"
+              >
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p
+                    class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                  >
+                    Security
+                  </p>
+                  <p
+                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                  >
+                    Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                    suspendisse semper morbi.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2"
+                >
+                  <img
+                    class="h-[min(152px,40cqw)] object-cover"
+                    src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"
+              ></div>
+            </div>
+            <div class="relative lg:row-span-2">
+              <div
+                class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+              ></div>
+              <div
+                class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]"
+              >
+                <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <a href="" target="_blank" alt="Victoria Valroff's Website">
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                    >
+                      Victoria Valroff
+                    </p>
+                  </a>
+                  <p
+                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                  >
+                    Using a headless CMS (ghost.io) and Javascript, I created
+                    this website for a client of mine.
+                  </p>
+                </div>
+
+                <div>
+                  <div
+                    class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm"
+                  >
+                    <div
+                      class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl"
+                    >
+                      <img
+                        class="size-full object-cover object-top"
+                        src="./media/Victoria-Valroff-Website.png"
+                        alt="unsung women project"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Testimonial Section -->
+    <section
+      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+    >
+      <div
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <figure class="mt-10">
+          <blockquote
+            class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9"
+          >
+            <p>
+              "<span class="text-indigo-600"
+                >Je ne peux que recommander Marine comme développeuse.</span
+              >
+              <br />
+              Que ce soit sa manière de structurer les choses, son sens de
+              l'organisation aiguisée, sa créativité et son écoute précieuse. Je
+              suis ravie du site et des propositions que m'a fait Marine tout au
+              long du processus. Sa manière de poser un cadre clair tout en
+              faisant preuve de souplesse avec une réelle volonté de comprendre
+              les besoins, les attentes et les usages du site. Son sens de
+              l'initiative et sa vision business sont aussi un vrai plus. J’ai
+              gagné des mois et de la sérénité en faisant appel à elle et je
+              recommencerai sans hésiter. Encore merci !"
+            </p>
+          </blockquote>
+          <figcaption class="mt-10">
+            <img
+              class="mx-auto size-10 rounded-full"
+              src="https://media.licdn.com/dms/image/v2/D4E03AQFJROCzqOyEBA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694440739295?e=1741824000&v=beta&t=dEfiddwKGuyjsjaN-doTv5DYmS1fiyQy6lPfjl3WPtw"
+              alt=""
+            />
+            <div
+              class="mt-4 flex items-center justify-center space-x-3 text-base"
+            >
+              <div class="font-semibold text-gray-900">Victoria Valroff</div>
+              <svg
+                viewBox="0 0 2 2"
+                width="3"
+                height="3"
+                aria-hidden="true"
+                class="fill-gray-900"
+              >
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <div class="text-gray-600">Coach - Leadership & Innovation</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ! HTML STRUCTURE FOR MY WEBSITE -->
+    <header>
       <div class="hero-container">
         <div class="scroll"></div>
         <!-- About Me -->
