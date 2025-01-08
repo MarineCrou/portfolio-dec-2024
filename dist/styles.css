@@ -801,10 +801,6 @@ video {
   flex-direction: column;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1004,21 +1000,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1035,16 +1016,12 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -1196,6 +1173,8 @@ video {
   container-type: inline-size;
 }
 
+/* scroll Icon Hero Section */
+
 .scroll {
   width: 60px;
   height: 60px;
@@ -1230,6 +1209,24 @@ video {
     transform: translate(0);
   }
 }
+
+/* scrolling text 
+.scrolling-text {
+  position: relative;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    left: 100%;
+    width: 500%;
+  }
+  to {
+    left: -100%;
+    width: 500%;
+  }
+} */
 
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
@@ -1495,21 +1492,6 @@ video {
     padding-right: 2rem;
   }
 
-  .lg\:py-56 {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
-  }
-
-  .lg\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -1519,3 +1501,4 @@ video {
     padding-bottom: 0.5rem;
   }
 }
+
