@@ -798,8 +798,40 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-\[30rem\] {
   min-height: 30rem;
+}
+
+.min-h-\[20rem\] {
+  min-height: 20rem;
+}
+
+.min-h-\[24rem\] {
+  min-height: 24rem;
+}
+
+.min-h-\[40rem\] {
+  min-height: 40rem;
+}
+
+.min-h-\[35rem\] {
+  min-height: 35rem;
+}
+
+.min-h-\[rem\] {
+  min-height: rem;
+}
+
+.min-h-\[28rem\] {
+  min-height: 28rem;
+}
+
+.min-h-\[320rem0rem\] {
+  min-height: 320rem0rem;
 }
 
 .w-\[36\.125rem\] {
@@ -1206,6 +1238,16 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-2 {
