@@ -1,22 +1,28 @@
 // JS : Animating text using JS : https://www.shecodes.io/athena/2225-animating-text-with-javascript
 
-// Copying the value of the button "Copy Email" in her section
+// * Copying the value of the button "Copy Email", for end-users
+let emailValue = (event) => {
+  let button = event.target;
+  console.log(button);
+  let input = document.getElementById("myInput");
 
-let emailValue = () => {
-  let inputValue = document.getElementById("myInput");
-  navigator.clipboard.writeText(inputValue.value);
-  console.log(inputValue.value);
+  if (input && input.value) {
+    console.log(input.value);
+    navigator.clipboard.writeText(input.value);
+    const getCopyEmail = event.target; // The button that was clicked
+    const originalText = getCopyEmail.innerHTML;
+    getCopyEmail.innerHTML = "copied ✔️";
 
-  const getCopyEmail = document.getElementById("copy-email");
-  const originalText = getCopyEmail.innerHTML;
-  getCopyEmail.innerHTML = "copied ✔️";
+    const reset = () => {
+      getCopyEmail.innerHTML = originalText;
+    };
 
-  const reset = () => {
-    getCopyEmail.innerHTML = originalText;
-  };
-
-  setTimeout(reset, 2000);
+    setTimeout(reset, 2000);
+  }
 };
 
-const getCopyEmail = document.getElementById("copy-email");
-getCopyEmail.addEventListener("click", emailValue);
+const getEmailButtons = document.querySelectorAll(".copy-email");
+
+getEmailButtons.forEach((button) => {
+  button.addEventListener("click", emailValue);
+});
