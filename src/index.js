@@ -1,8 +1,8 @@
 // JS : Animating text using JS : https://www.shecodes.io/athena/2225-animating-text-with-javascript
 // / * -------- Responsive - toggle responsive nav menu ---------------------------
 let openResponsiveNav = () => {
-  let displayResponsieMenu = document.getElementById("display-responsive-menu");
-  displayResponsieMenu.classList.toggle("hidden");
+  let responsiveMenu = document.getElementById("display-responsive-menu");
+  responsiveMenu.classList.toggle("hidden");
 };
 
 const openResponsiveMenuBtn = document.querySelector(
@@ -12,13 +12,21 @@ console.log(openResponsiveMenuBtn);
 openResponsiveMenuBtn.addEventListener("click", openResponsiveNav);
 
 // * -------- Responsive - close responsive nav menu ---------------------------
-let displayResponsiveNav = () => {
-  let closeResponsieMenu = document.getElementById("display-responsive-menu");
-  closeResponsieMenu.classList.toggle("hidden");
+let displayResponsiveNav = (event) => {
+  let buttonClicked = event.target;
+  console.log(buttonClicked);
+  if (buttonClicked) {
+    let responsiveMenu = document.getElementById("display-responsive-menu");
+    responsiveMenu.classList.toggle("hidden");
+  } else {
+    console.log("There was an issue with the responsivenav button");
+  }
 };
 
-const menuBtn = document.querySelector("#mobile-nav-btn");
-menuBtn.addEventListener("click", displayResponsiveNav);
+const menuBtns = document.querySelectorAll(".responsive-nav-buttons");
+menuBtns.forEach((button) => {
+  button.addEventListener("click", displayResponsiveNav);
+});
 
 // * -------- Copying the value of the button "Copy Email", for end-users -------------
 let emailValue = (event) => {
@@ -42,7 +50,6 @@ let emailValue = (event) => {
 };
 
 const getEmailButtons = document.querySelectorAll(".copy-email");
-
 getEmailButtons.forEach((button) => {
   button.addEventListener("click", emailValue);
 });
