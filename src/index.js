@@ -1,5 +1,5 @@
 // JS : Animating text using JS : https://www.shecodes.io/athena/2225-animating-text-with-javascript
-// / * -------- Responsive - toggle responsive nav menu ---------------------------
+// / * -------- Responsive Nav - toggle open ---------------------------
 let openResponsiveNav = () => {
   let responsiveMenu = document.getElementById("display-responsive-menu");
   responsiveMenu.classList.toggle("hidden");
@@ -11,7 +11,7 @@ const openResponsiveMenuBtn = document.querySelector(
 console.log(openResponsiveMenuBtn);
 openResponsiveMenuBtn.addEventListener("click", openResponsiveNav);
 
-// * -------- Responsive - close responsive nav menu ---------------------------
+// * -------- Responsive Nav - toggle close ---------------------------
 let displayResponsiveNav = (event) => {
   let buttonClicked = event.target;
   console.log(buttonClicked);
@@ -19,7 +19,7 @@ let displayResponsiveNav = (event) => {
     let responsiveMenu = document.getElementById("display-responsive-menu");
     responsiveMenu.classList.toggle("hidden");
   } else {
-    console.log("There was an issue with the responsivenav button");
+    console.log("There was an issue with the display-responsive-menu");
   }
 };
 
