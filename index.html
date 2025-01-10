@@ -38,6 +38,7 @@
           </div>
           <div class="flex lg:hidden">
             <button
+              id="responsive-nav-menu-btn"
               type="button"
               class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             >
@@ -99,8 +100,13 @@
             >
           </div>
         </nav>
-        <!-- *Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden md:hidden" role="dialog" aria-modal="true">
+        <!-- * Mobile menu, show/hide based on menu open state. -->
+        <div
+          id="display-responsive-menu"
+          class="hidden lg:hidden md:hidden"
+          role="dialog"
+          aria-modal="true"
+        >
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-50"></div>
           <div
@@ -109,13 +115,9 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Marine Crouzet</span>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
               </a>
               <button
+                id="mobile-nav-btn"
                 type="button"
                 class="-m-2.5 rounded-md p-2.5 text-gray-700"
               >
@@ -137,7 +139,8 @@
                 </svg>
               </button>
             </div>
-            <div class="mt-6 flow-root">
+            <!-- Mobile Nav -->
+            <div id="mobile-nav" class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
@@ -993,7 +996,7 @@
       </div>
     </section>
 
-    <!-- ! Testimonial Section -->
+    <!-- * Testimonial Section -->
     <section
       id="testimonials"
       class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
@@ -1081,6 +1084,7 @@
       </div>
     </section>
 
+    <!-- * Contact -->
     <section id="Contact">
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <p class="font-semibold text-center text-gray-900 text-2xl">
